@@ -81,8 +81,10 @@
     <h2>6. مدة الاحتفاظ بالبيانات</h2>
     <p>نحتفظ ببيانات العضوية طوال مدة عضويتك، وببيانات الطلبات والمستندات والمراسلات للمدة اللازمة لأغراض الرابطة المالية والإدارية وللالتزام بأي متطلبات قانونية، ثم تُحذف أو تُجهَّل هويتها.</p>
 
-    <h2>7. حقوقك وحذف الحساب</h2>
-    <p>يحق لك طلب الاطلاع على بياناتك أو تصحيحها أو حذف حسابك وبياناتك المرتبطة به. لإرسال الطلب راسلنا على البريد الإلكتروني المذكور في القسم 10 مع ذكر كود العضو، وسنتحقق من هويتك ثم ننفّذ الطلب خلال مدة معقولة لا تتجاوز 30 يومًا. قد نحتفظ بما يلزم قانونيًا أو ماليًا من سجلات، وسنُعلمك بذلك. وحذف الحساب لا يعني بالضرورة إنهاء العضوية في الرابطة.</p>
+    <h2 id="delete-account">7. حقوقك وحذف الحساب</h2>
+    <p><strong>حذف الحساب من داخل التطبيق:</strong> الملف الشخصي &larr; "حذف حسابي". يحذف ذلك حساب الدخول الخاص بك وربطه بسجل عضويتك وعلامات قراءة الإشعارات. أما بيانات العضوية وطلبات المساعدة المالية ومستنداتها وتسجيلات الفعاليات ورسائل التواصل فتحتفظ بها الرابطة وفق القسم 6. حسابات المسؤولين تُحذف عن طريق الرابطة.</p>
+    <p><strong>طلب حذف بقية البيانات أو تصحيحها أو الاطلاع عليها:</strong> راسلنا على البريد المذكور في القسم 10 مع ذكر كود العضو، وسنتحقق من هويتك وننفّذ الطلب خلال مدة لا تتجاوز 30 يومًا. قد نحتفظ بما يلزم قانونيًا أو ماليًا من سجلات وسنُعلمك بذلك.</p>
+    <p>حذف الحساب لا ينهي عضويتك في الرابطة، ويمكنك تفعيل حساب جديد لاحقًا بكود العضو ورقم الهاتف.</p>
 
     <h2>8. الأطفال</h2>
     <p>التطبيق موجّه لأعضاء الرابطة البالغين ولا يستهدف الأطفال، ولا نجمع عمدًا بيانات من هم دون 18 عامًا.</p>
@@ -134,8 +136,10 @@
     <h2>6. Retention</h2>
     <p>We keep membership data for as long as you are a member, and request, document and correspondence data for as long as the Association's financial and administrative purposes and legal obligations require, after which it is deleted or anonymised.</p>
 
-    <h2>7. Your rights and account deletion</h2>
-    <p>You may ask to access or correct your data, or to delete your account and the data linked to it. To make a request, e-mail us at the address in section 10 and include your member code. We will verify your identity and complete the request within a reasonable time, no later than 30 days. We may keep records we are legally or financially required to keep, and will tell you if so. Deleting your account does not by itself end your membership in the Association.</p>
+    <h2 id="delete-account-en">7. Your rights and account deletion</h2>
+    <p><strong>Delete your account inside the app:</strong> Profile &rarr; "Delete my account". This deletes your login account, its link to your membership record and your notification read markers. Membership data, financial-aid requests and documents, event registrations and contact messages are kept by the Association as described in section 6. Administrator accounts are removed by the Association.</p>
+    <p><strong>To ask for the remaining data to be deleted, corrected or provided to you:</strong> e-mail us at the address in section 10 and include your member code. We will verify your identity and complete the request within 30 days at most. We may keep records we are legally or financially required to keep, and will tell you if so.</p>
+    <p>Deleting your account does not end your membership in the Association; you can activate a new account later with your member code and phone number.</p>
 
     <h2>8. Children</h2>
     <p>The app is intended for adult members of the Association and is not directed at children. We do not knowingly collect data from anyone under 18.</p>
@@ -165,7 +169,7 @@
     }
     bAr.onclick = function () { show('ar'); };
     bEn.onclick = function () { show('en'); };
-    if (/^en/i.test(location.hash.slice(1))) show('en');
+    if (/^en|-en$/i.test(location.hash.slice(1))) show('en');
   })();
 </script>
 </body>
